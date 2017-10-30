@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Lato%7CRaleway:400,600');
+/*Add a link to Google Fonts at the top! THis should be the first line of your stylesheet.*/
+
+/* ----------------------------------------
+Base Styles
+------------------------------------------- */
+/* Note: Makes sure that padding and the border are included in the width for each element. */
+/* Don't add anything else under the * selector! */
+* {
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+}
+body {
+	color: #44545E;
+	font-family: "Raleway", sans-serif;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	margin: 0;
+}
+
+/* ----------------------------------------
+Typography
+------------------------------------------- */
+p {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	text-transform: none;
+	font-size: 15px;
+	line-height: 140%;
+}
+h1 {
+	letter-spacing: 12px;
+	font-size: 37px;
+	margin-bottom: 30px;
+}
+h2 {
+	font-size: 23px;
+}
+
+h3  {
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	margin-bottom: 50px;
+}
+
+#archive {
+	margin-bottom: 50px;
+	margin-top: 125px;
+	letter-spacing: 1px;
+}
+#issuetwenty {
+	margin-bottom: 50px;
+}
+/* ----------------------------------------
+Lists
+------------------------------------------- */
+
+
+
+/* ----------------------------------------
+Layout
+------------------------------------------- */
+.articles {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 60px;
+
+}
+.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+	margin-bottom: 75px;
+
+}
+.about {
+	background-color: #CDF3F6;
+	padding: 100px;
+	width: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.gallery img {
+	margin-bottom: 10px;
+}
+.gallery img:hover {
+	opacity: 0.6;
+}
+/* ----------------------------------------
+Header
+------------------------------------------- */
+header {
+	background-image: url(../images/home_header_bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 300px;
+	color: white;
+}
+
+nav a {
+	text-decoration: none;
+	color: #7B98AA;
+	display: inline-block;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+
+}
+nav a:hover {
+	color: #44545E;
+	transition-timing-function: ease-in-out;
+}
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: white;
+	margin-top: 0;
+}
+
+/* ----------------------------------------
+Buttons
+------------------------------------------- */
+article a {
+	text-decoration: none;
+	color: #44545E;
+	display: inline-block;
+	border: 2px solid grey;
+	padding: 10px 25px;
+	margin-top: 50px;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: 600;
+}
+
+article a:hover {
+	color: #7B98AA;
+	transition-timing-function: ease-in-out;
+}
+
+
+
+/* ----------------------------------------
+Footer
+------------------------------------------- */
+footer {
+	background-color: #CDF3F6;
+	height: 275px;
+	padding-top: 50px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #44545E;
+	display: inline-block;
+	padding: 0 15px;
+	font-size: 30px;
+}
+
+footer a:hover {
+	color: #7B98AA;
+	transition-timing-function: ease-in-out;
+}
+
+input {
+	margin-right: 30px;
+	width: 300px;
+	height: 35px;
+	text-align: center;
+	border: none;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-top: 50px;
+
+}
+
+hr {
+	margin-top: 50px;
+	height: 5px;
+	border: none;
+	border-top: 2px solid grey;
+	color: #44545E;
+
+}
+button {
+	background-color: #CDF3F6;
+	border: 2px solid grey;
+	width: 125px;
+	margin: 0 auto;
+	height: 35px;
+	font-family: "Raleway", sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 12px;
+	letter-spacing: 1px;
+	color: #44545E;
+}
+button:hover {
+	color: #7B98AA;
+	transition-timing-function: ease-in-out;
+}
+
+footer p {
+	padding: 20px auto;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
