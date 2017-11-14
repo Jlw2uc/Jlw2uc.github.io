@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Special+Elite');
+/* --------------------------------------------------------------------------
+Base styles:  colors(#848C8E/ #435058/ #3B0D11/ #6A3937/#F1F2EE/ #04151F )
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+header {
+  height: 100vh;
+  background-image: url(../img/headerimage.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #F1F2EE;
+  font-family:'Special Elite', cursive;
+  font-weight: 400;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 7px;
+  padding-top: 250px;
+  margin-bottom: 35px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color:
+}
+nav a {
+  color: #435058;
+  text-decoration: none;
+  font-family: "Alegreya", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  transition: all 2s ease-in-out;
+}
+nav a:hover {
+  text-decoration: line-through;
+}
+h2, h3, h4 {
+  font-family: "Alegreya", serif;
+}
+#about {
+  display: grid;
+
+}
+/* Fix for responsive images */
+img {
+  max-width: 800px;
+}
