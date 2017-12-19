@@ -45,3 +45,18 @@ $('#hamburger').on('click', function(){
 $('#close').on('click', function(){
   $('.nav-links').removeClass('menu-open');
 });
+
+//konami
+var kkeys = [];
+var konami = "38,38,40,40,37,39,37,39,66,65";
+
+$(document).keydown(function(e) {
+  kkeys.push( e.keyCode );
+  if ( kkeys.toString().indexOf( konami ) >= 0 ){
+    $(document).unbind('keydown',arguments.callee);
+
+    $('body').css('background-image', 'url(../img/firework.jpg);');
+
+
+  }
+});
