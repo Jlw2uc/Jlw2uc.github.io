@@ -10,84 +10,106 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="lightbox/dist/css/lightbox.css" rel="stylesheet">
 </head>
 <body>
   <nav>
-    <a href="#about">About</a>
-    <a href="#galleries">Galleries</a>
-    <a href="#contact">Contact</a>
+    <a href="#" id="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></a>
+
+    <div class="nav-links">
+      <a href="#" id="close">X</a>
+      <a href="#about">About</a>
+      <a href="#galleries">Galleries</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
+
   <header>
     <h1>Jessica Wilson</h1>
   </header>
-  <section>
-    <h2>About</h2>
-    <div class="about">
-      <div>
-        <p>Vommit food and eat it again hide at bottom of staircase to trip human for pounce on unsuspecting person eat all the power cords cat dog hate mouse eat string barf pillow no baths hate everything but cat snacks caticus cuteicus. Plop down in the middle where everybody walks spend all night ensuring people don't sleep sleep all day, present belly, scratch hand when stroked leave dead animals as gifts. Stare at guinea pigs adventure always, have secret plans. Jump around on couch, meow constantly until given food, annoy owner until he gives you food say meow repeatedly until belly rubs, feels good soft kitty warm kitty little ball of furr or that box? i can fit in that box and have my breakfast spaghetti yarn.</p>
-      </div>
-      <div>
-        <img src="img/aboutimage.jpg" alt="Self portrait">
-      </div>
+  <div id="grid-wrapper">
+    <div id="about">
+      <h2>About</h2>
+      <img id="aboutimage" src="img/aboutimage.jpg" alt="Self portrait">
+      <p>Vommit food and eat it again hide at bottom of staircase to trip human for pounce on unsuspecting person eat all the power cords cat dog hate mouse eat string barf pillow no baths hate everything but cat snacks caticus cuteicus. Plop down in the middle where everybody walks spend all night ensuring people don't sleep sleep all day, present belly, scratch hand when stroked leave dead animals as gifts. Stare at guinea pigs adventure always, have secret plans. Jump around on couch, meow constantly until given food, annoy owner until he gives you food say meow repeatedly until belly rubs, feels good soft kitty warm kitty little ball of furr or that box? i can fit in that box and have my breakfast spaghetti yarn.</p>
+      <p>Vommit food and eat it again hide at bottom of staircase to trip human for pounce on unsuspecting person eat all the power cords cat dog hate mouse eat string barf pillow no baths hate everything but cat snacks caticus cuteicus. Plop down in the middle where everybody walks spend all night ensuring people don't sleep sleep all day, present belly, scratch hand when stroked leave dead animals as gifts. Stare at guinea pigs adventure always, have secret plans. Jump around on couch, meow constantly until given food, annoy owner until he gives you food say meoow</p>
     </div>
-  </section>
-  <section>
-    <div class="galleries">
+    <div id="galleries">
       <h2>Galleries</h2>
       <h3>Runway</h3>
-      <div class="gridcontainer1">
-        <img src="img/IMG_1773 copy.jpeg" alt="">
-        <img src="img/IMG_1722-2 copy.jpg" alt="">
-        <img src="img/IMG_1717-3 copy.jpg" alt="">
-        <img src="img/IMG_1798 copy.jpg" alt="">
-        <img src="img/IMG_1796 copy.JPG" alt="">
-        <img src="img/IMG_1797 copy.JPG" alt="">
-        <img src="img/IMG_2063 copy.jpg" alt="">
-        <img src="img/IMG_2052 copy.jpg" alt="">
-        <img src="img/IMG_2059 copy.jpg" alt="">
-        <img src="img/IMG_2040.jpg" alt="">
-        <img src="img/IMG_1814 copy.jpg" alt="">
-        <img src="img/IMG_2010.jpg" alt="">
-        <img src="img/IMG_2053.jpg" alt="">
-        <img src="img/IMG_2051.jpg" alt="">
-        <img src="img/IMG_2054.jpg" alt="">
-        <img src="img/IMG_1769 copy.jpg" alt="">
-        <img src="img/IMG_2069 copy.jpg" alt="">
-        <img src="img/IMG_2082.jpg" alt="">
-        <img src="img/IMG_1874 copy.jpg" alt="">
-        <img src="img/IMG_1875 copy.jpg" alt="">
-        <img src="img/IMG_1873.jpg" alt="">
-        <img src="img/IMG_1878.jpg" alt="">
-        <img src="img/IMG_2011 copy.jpg" alt="">
-        <img src="img/IMG_1876 copy.jpg" alt="">
-        <img src="img/DSC_0910.jpg" alt="">
-        <img src="img/IMG_2070 copy.jpg" alt="">
-        <img src="img/DSC_0549 copy.jpg" alt="">
+      <div class="gridcontainer">
+        <a href="img/IMG_1773 copy.jpeg" data-lightbox="Runway" data-title="In Travian Vann for RVA Fashion Week Fall 2017"><img src="img/IMG_1773 copy.jpeg" alt=""></a>
+        <a href="img/IMG_1722-2 copy.jpg" data-lightbox="Runway" data-title="In Travian Vann for RVA Fashion Week Fall 2017"><img src="img/IMG_1722-2 copy.jpg" alt=""></a>
+        <a href="img/IMG_1717-3 copy.jpg" data-lightbox="Runway" data-title="In Amanda Welch for RVA Fashion Week Fall 2017"><img src="img/IMG_1717-3 copy.jpg" alt=""></a>
 
-        <img src="img/IMG_1811 copy.jpg" alt="">
-        <img src="img/IMG_1813-1 copy.jpg" alt="">
+        <a href="img/IMG_1798 copy.jpg" data-lightbox="Runway" data-title="In Salome Styles for RVA Fashion Week Fall 2017"><img src="img/IMG_1798 copy.jpg" alt=""></a>
+        <a href="img/IMG_1796 copy.JPG" data-lightbox="Runway" data-title="In Amanda Welch for RVA Fashion Week Fall 2017"><img src="img/IMG_1796 copy.JPG" alt=""></a>
+        <a href="img/IMG_1797 copy.JPG" data-lightbox="Runway" data-title="In Salome Styles for RVA Fashion Week Fall 2017"><img src="img/IMG_1797 copy.JPG" alt=""></a>
+
+        <a href="img/IMG_2063 copy.jpg" data-lightbox="Runway" data-title="In Ivy Glam for Va Fashion Week: November 11, 2017"><img src="img/IMG_2063 copy.jpg" alt=""></a>
+        <a href="img/IMG_2052 copy.jpg" data-lightbox="Runway" data-title="In Diane Linston for Va Fashion Week: November 11, 2017"><img src="img/IMG_2052 copy.jpg" alt=""></a>
+        <a href="img/IMG_2059 copy.jpg" data-lightbox="Runway" data-title="In Ivy Glam for Va Fashion Week: November 11, 2017"><img src="img/IMG_2059 copy.jpg" alt=""></a>
+
+        <a href="img/IMG_2053.jpg" data-lightbox="Runway" data-title="In Willie Hall for Va Fashion Week: November 11, 2017"><img src="img/IMG_2053.jpg" alt=""></a>
+        <a href="img/IMG_2051.jpg" data-lightbox="Runway" data-title="In Salome Styles for Va Fashion Week: November 11, 2017"><img src="img/IMG_2051.jpg" alt=""></a>
+        <a href="img/IMG_2054.jpg" data-lightbox="Runway" data-title="In Willie Hall for Va Fashion Week: November 11, 2017"><img src="img/IMG_2054.jpg" alt=""></a>
+
+        <a href="img/IMG_1769 copy.jpg" data-lightbox="Runway" data-title="In Aba Couture by Azi Blas for RVA Fashion Week Fall 2017"><img src="img/IMG_1769 copy.jpg" alt=""></a>
+        <a href="img/IMG_2069 copy.jpg" data-lightbox="Runway" data-title="In Aba Couture by Azi Blas for Va Fashion Week: November 11, 2017"><img src="img/IMG_2069 copy.jpg" alt=""></a>
+        <a href="img/IMG_2082.jpg" data-lightbox="Runway" data-title="In Aba Couture by Azi Blas for Va Fashion Week: November 11, 2017"><img src="img/IMG_2082.jpg" alt=""></a>
 
       </div>
       <h3>Photoshoots</h3>
+      <div class="gridcontainer">
+        <a href="img/IMG_2040.jpg" data-lightbox="Photoshoots" data-title="Photograph by Kai Eason Photography: Richmond, Va Fall 2017"><img src="img/IMG_2040.jpg" alt=""></a>
+        <a href="img/IMG_1814 copy.jpg" data-lightbox="Photoshoots" data-title="Photograph by Kai Eason Photography: Richmond, Va Fall 2017"><img src="img/IMG_1814 copy.jpg" alt=""></a>
+        <a href="img/IMG_2010.jpg" data-lightbox="Photoshoots" data-title="Photograph by Kai Eason Photography: Richmond, Va Fall 2017"><img src="img/IMG_2010.jpg" alt=""></a>
 
+        <a href="img/IMG_1874 copy.jpg" data-lightbox="Photoshoots" data-title="Photograph by Truong Bui Photography: Richmond, Va Fall 2017"><img src="img/IMG_1874 copy.jpg" alt=""></a>
+        <a href="img/IMG_1875 copy.jpg" data-lightbox="Photoshoots" data-title="Photograph by Truong Bui Photography: Richmond, Va Fall 2017"><img src="img/IMG_1875 copy.jpg" alt=""></a>
+        <a href="img/IMG_1873.jpg" data-lightbox="Photoshoots" data-title="Photograph by Truong Bui Photography: Richmond, Va Fall 2017"><img src="img/IMG_1873.jpg" alt=""></a>
+
+        <a href="img/IMG_1878.jpg" data-lightbox="Photoshoots" data-title="Photograph by Truong Bui Photography: Richmond, Va Fall 2017"><img src="img/IMG_1878.jpg" alt=""></a>
+        <a href="img/IMG_2011 copy.jpg" data-lightbox="Photoshoots" data-title="Photograph by Kai Eason Photography: Richmond, Va Fall 2017"><img src="img/IMG_2011 copy.jpg" alt=""></a>
+        <a href="img/IMG_1876 copy.jpg" data-lightbox="Photoshoots" data-title="Photograph by Truong Bui Photography: Richmond, Va Fall 2017"><img src="img/IMG_1876 copy.jpg" alt=""></a>
+
+        <a href="img/DSC_0910.jpg" data-lightbox="Photoshoots" data-title="Photograph by Keri Holt: Charlottesville, Va Spring 2017"><img src="img/DSC_0910.jpg" alt=""></a>
+        <a href="img/IMG_2070 copy.jpg" data-lightbox="Photoshoots" data-title="Photograph by Kai Eason Photography: Richmond, Va Fall 2017"><img src="img/IMG_2070 copy.jpg" alt=""></a>
+        <a href="img/IMG_1813-1 copy.jpg" data-lightbox="Photoshoots" data-title="Photoshoot at the VMFA, Fall 2017"><img src="img/IMG_1813-1 copy.jpg" alt=""></a>
+      </div>
     </div>
-  </section>
-  <section>
-    <h2>Contact</h2>
-    <p>food and eat it again hide at bottom of staircase to trip human for pounce on unsuspecting person eat all the power cords cat dog hate mouse eat string barf pillow no baths hate everything but cat snacks caticus cuteicus. Plop down in the middle where everybody walks spend all night ensuring people don't sleep sleep all day, present belly, scratch hand when stroked leave dead animals as gifts. Stare at guinea pigs adventure always, have secret plans. Jump around on couch, meow constantly until given food, annoy owner until he gives you food say meow</p>
-    <img id="contact" src="img/IMG_1870 copy.jpg" alt="">
-    <footer class="contact">
-      <a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <h3>&copy; Jessica Wilson</h3>
-    </footer>
-  </section>
-  <!-- HINT: Need to link to another page? Create a file with an html extension in your main project folder. -->
-  <!-- Then link to it using an anchor. for example: <a href="blog.html">Blog</a> -->
+
+    <div id="contact">
+      <h2>Contact</h2>
+      <img id="contactimage" src="img/IMG_1870 copy.jpg" alt="">
+      <form action="">
+        <h4>Get In Touch</h4>
+        <input type="text" id="name" placeholder="Full Name" name="full-name">
+        <h5 id="nameerror">Fill out your full name</h5>
+        <input type="email" id="email" placeholder="Email" name="_replyto">
+        <h5 id="emailerror">Fill out your email!</h5>
+        <input type="text" placeholder="Subject" name="subject">
+        <textarea rows="10" placeholder="Message" name="message"></textarea>
+        <button type="submit" placeholder"Submit">Submit</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <span id="social">
+      <a href="https://www.facebook.com/jwillie55" target="_blank"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/jlwilz/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+    </span>
+    <hr>
+    <p>&copy; Jessica Wilson</p>
+  </footer>
+
+    <!-- HINT: Need to link to another page? Create a file with an html extension in your main project folder. -->
+    <!-- Then link to it using an anchor. for example: <a href="blog.html">Blog</a> -->
 
 
 
-  <script src="js/jquery-1.12.0.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-</html>
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="lightbox/dist/js/lightbox.js"></script>
+  </body>
+  </html>
