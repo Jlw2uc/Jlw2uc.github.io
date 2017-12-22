@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'lato', sans-serif;
+}
+
+section {
+  height: 100%;
+}
+
+.section-inner {
+  padding: 40px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+section:nth-of-type(odd) {
+  background-color: #dfdfdf;
+}
+
+section:nth-of-type(even) {
+  background-color: #F07057;
+}
+
+/* ---------------------------------
+NAV STYLES
+------------------------------------*/
+nav {
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  text-align: center;
+  background: #2f333c;
+}
+
+nav a {
+  color: #fff;
+  height: 50px;
+  padding: 0 10px;
+  line-height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  color: #999;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hamburger {
+  opacity: 0;
+}
+
+.close {
+  opacity: 0;
+  text-align: right;
+  transform: translateX(-100%);
+  display: block;
+  margin: 0;
+}
+
+/* ----------------------------------
+RESPONSIVE STYLES
+-------------------------------------*/
+@media only screen and (max-width: 700px) {
+  .nav-links {
+    transform: translateX(-100%);
+    background-color: grey;
+  }
+  .nav-links a {
+    display: block;
+    text-align: left;
+  }
+
+  .hamburger {
+    opacity: 1;
+    display: block;
+    text-align: left;
+  }
+
+  /* Styles to apply with JS to slide the menu out or down */
+  .menu-open {
+    transform: translateX(0);
+  }
+  .close-open {
+    opacity: 1;
+    transform: translateX(0);
+    background-color: #2f333c;
+  }
+
+}
